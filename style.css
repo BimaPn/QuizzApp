@@ -1,0 +1,398 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color: #448FF2;
+    font-family: 'Alatsi', sans-serif;
+}
+/* start-container */
+.start-container{
+    width: 20%;
+    background-color: lightblue;
+    margin: 20vh auto;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    border-bottom: #0554F2 solid 5px;
+    border-right: #0554F2 solid 5px;
+    display: block;
+}
+.start-container h1{
+    padding-top: 17px;
+    font-size: 2.5em;
+}
+.start-container button{
+    font-size: 1.2em;
+    padding: 7px 37px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 0;
+    background-color: #056CF2;
+    font-family: 'Alatsi', sans-serif;
+    color: #F2F2F2;
+    margin: 30px;
+    font-size: 1.7em;
+    /* border-bottom: #448FF2 solid 3px; */
+}
+.start-container h5{
+    padding-bottom: 10px;
+}
+/* main-container */
+.main-container{
+    width: 50%;
+    margin: 60px auto;
+    background-color: #F2F2F2;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    display: none;
+}
+/* bagian atas */
+.main-container .topSec{
+    width: 85%;
+    margin: 0 auto;
+    /* background-color: lightblue; */
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.main-container .topSec .timer{
+    font-size: 1.1em;
+    background-color: #448FF2;
+    padding: 7px 3px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* color: #F2F2F2; */
+}
+.topSec .timer span{
+    background-color: #F2F2F2;
+    color: black;
+    padding: 3px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* soal */
+.main-container .soal{
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.8em;
+    text-align: start;
+    padding-top: 20px ;
+    padding-bottom: 10px;
+}
+.main-container h1{
+    /* justify-self: start; */
+    /* text-align: start; */
+    font-size: 1.8em;
+}
+.main-container ul{
+    width: 85%;
+    /* background-color: #d7e3f3; */
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.main-container ul li{
+    width: 100%;
+    list-style: none;
+    /* width: 150px; */
+    margin-bottom: 17px;
+    text-align: start;
+    /* padding-left: 10px; */
+    padding: 12px 20px;
+    background-color: #d7e3f3;
+    font-size: 1.3em;
+    border-radius: 10px;
+    border: black solid 1px;
+}
+/* bagian bawah */
+.bottomSec{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+}
+.bottomSec h5{
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.bottomSec button{
+    width: 15%;
+    padding: 7px 0;
+    font-size: 1.3em;
+    border: 0;
+    border-radius: 9px;
+    background-color: #056CF2;
+    font-family: 'Alatsi', sans-serif;
+    color: #F2F2F2;
+}
+/* score display */
+.display-score{
+    width: 17%;
+    /* height: 300px; */
+    background-color: #F2F2F2;
+    display: none;
+    margin: 17vh auto;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+    border-bottom: #0554F2 solid 5px;
+    border-right: #0554F2 solid 5px;
+}
+.display-score .argument{
+    padding-top: 30px;
+    font-size: 2.2em;
+    /* color: red; */
+    font-family: 'Roboto', sans-serif;
+}
+.display-score .score{
+    padding-top: 18px;
+    font-size: 1.5em;
+}
+.fa-trophy{
+    color: #0554F2;
+}
+.tryButton{
+    width: 38%;
+    padding: 8px 0;
+    background-color: #056CF2;
+    font-size: 1.1em;
+    border: 0;
+    font-family: 'Alatsi', sans-serif;
+    color: #F2F2F2;
+    margin-top: 35px;
+    border-radius: 10px;
+}
+/* timeout display */
+.timeout-display{
+    display: none;
+    width: auto;
+	height: auto;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+    bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.7);
+	z-index: 9999;
+}
+.container-timeout{
+    width: 15%;
+    /* height: 200px; */
+    margin: 20vh auto;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 20px;
+}
+.container-timeout h1{
+    font-size: 2.5em;
+    color: red;
+}
+.container-timeout h4{
+    padding: 10px;
+    font-size: 1.5em;
+}
+.container-timeout button{
+    margin: 0;
+}
+
+/* hr */
+body .display-score hr{
+    background-color: blue;
+}
+body hr{
+    width: 85%;
+    margin: 0px auto;
+    height: 2px;
+    background-color: rgb(48, 151, 186);
+    border: 0;
+}
+body .garis-bawah{
+    margin: 30px auto 10px auto;
+}
+
+/* responsive */
+@media screen and (max-width: 1366px){
+/* start container */
+.start-container{
+    width: 30%;
+}
+/* main container */
+.main-container{
+    width: 70%;
+}
+/* score display */
+.display-score{
+    width: 23%;
+}
+/* display timeout */
+.container-timeout{
+    width: 25%;
+}
+.container-timeout h1{
+    font-size: 2em;
+}
+.container-timeout h4{
+    font-size: 1.2em;
+}
+.container-timeout button{
+    font-size: .8em;
+}
+}
+@media screen and (max-width: 768px){
+/* start container */
+.start-container{
+    width: 45%;
+}
+/* main container */
+.main-container{
+    width: 85%;
+}
+.bottomSec h5{
+ font-size: .9em;
+}
+.bottomSec button{
+ font-size: 1em;
+}
+/* score display */
+.display-score{
+    width: 35%;
+}
+.tryButton{
+    font-size: 1em;
+}
+.display-score h1{
+    font-size: 1.5em;
+}
+/* display timeout */
+.container-timeout{
+    width: 35%;
+}
+.container-timeout h1{
+    font-size: 1.7em;
+}
+.container-timeout h4{
+    padding: 10px;
+    font-size: 1em;
+}
+.container-timeout button{
+    font-size: .7em;
+}
+}
+@media screen and (max-width: 500px){
+    /* start container */
+    .start-container{
+        width: 70%;
+    }
+    /* main container */
+    .main-container{
+        width: 95%;
+    }
+    .main-container h1{
+        font-size: 1.4em;
+    }
+    .main-container ul{
+        width: 90%;
+    }
+    .main-container ul li{
+        font-size: .8em;
+    }
+    .main-container .topSec .timer{
+        font-size: .8em;
+    }
+    .bottomSec h5{
+        font-size: .7em;
+    }
+    .bottomSec button{
+        width: 23%;
+        font-size: .8em;
+    }
+    .main-container .soal{
+        width: 90%;
+        font-size: 1.4em;
+    }
+    /* score display */
+.display-score{
+    width: 55%;
+}
+.display-score .tryButton{
+    font-size: .8em;
+}
+.display-score .argument{
+    font-size: 1.6em;
+}
+/* display timeout */
+.container-timeout{
+    width: 50%;
+}
+.container-timeout h1{
+    font-size: 1.5em;
+}
+.container-timeout h4{
+    padding: 10px;
+    font-size: .8em;
+}
+.container-timeout button{
+    font-size: .7em;
+}
+}
+@media screen and (max-width: 375px){
+     /* start container */
+     .start-container{
+        width: 80%;
+    }
+        /* main container */
+        .main-container{
+            width: 97%;
+        }
+        .main-container h1{
+            font-size: 1.2em;
+        }
+        .main-container ul{
+            width: 90%;
+        }
+        .main-container ul li{
+            font-size: .6em;
+        }
+        .main-container .topSec .timer{
+            font-size: .6em;
+        }
+        .bottomSec h5{
+            font-size: .6em;
+        }
+        .bottomSec button{
+            width: 23%;
+            font-size: .7em;
+        }
+        .main-container .soal{
+            width: 90%;
+            font-size: 1.2em;
+        }
+            /* score display */
+.display-score{
+    width: 65%;
+}
+.display-score h1{
+    font-size: 1em;
+    padding-bottom: 5px;
+}
+.display-score .argument{
+    font-size: 1.6em;
+}
+.display-score .score{
+    font-size: 1.3em;
+}
+.display-score .tryButton{
+    font-size: .8em;
+}
+}

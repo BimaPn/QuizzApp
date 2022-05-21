@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz App</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Concert+One&family=Fredoka+One&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b57efd05b5.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-container">
+        <h1>QUIZZ APP</h1>
+        <button>PLAY</button>
+        <h5>Created By Bima Putra</h5>
+    </div>
+    <div class="main-container">
+        <div class="topSec">
+            <h1>QUIZZ APP</h1>
+            <div class="timer">Time Left  <span>01 : 15</span></div>
+        </div>
+        <hr>
+        <div class="soal"></div>
+        <ul>
+            <li class="answer1"></li>
+            <li class="answer2"></li>
+            <li class="answer3"></li>
+            <li class="answer4"></li>
+        </ul>
+        <hr class="garis-bawah">
+        <div class="bottomSec">
+            <h5><span>1</span> of 10 Questions</h5>
+            <button>SUBMIT</button>
+        </div>
+        
+    </div>
+    <div class="display-score">
+        <h1>RESULT</h1> 
+        <hr>
+        <h1 class="argument"></h1>
+        <div class="score"><i class="fa-solid fa-trophy"></i>&nbsp;<span></span>/100</div>
+        <button type="button" class="tryButton" onClick="window.location.reload();"><i class="fa-solid fa-rotate-right"></i>&nbsp;TRY AGAIN</button>
+    </div>
+    <div class="timeout-display">
+        <div class="container-timeout">
+            <h1>TIME'S UP</h1>
+            <h4>Score : <span></span></h4>
+            <button type="button" class="tryButton" onClick="window.location.reload();"><i class="fa-solid fa-rotate-right"></i>&nbsp;TRY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
